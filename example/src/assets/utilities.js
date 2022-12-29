@@ -32,9 +32,11 @@ export function getNavAction(ios: string, android: string, onPress: ?() => void,
 		);
 	}
 
-	const ripple = TouchableNativeFeedback.Ripple('rgba(0, 0, 0, .32)', true);
+// 	const ripple = TouchableNativeFeedback.Ripple('rgba(0, 0, 0, .32)', true);
 	return (
-		<TouchableNativeFeedback background={ripple} onPress={onPress}>
+		<TouchableNativeFeedback 
+// 		background={ripple} 
+		onPress={onPress}>
 			{getContent()}
 		</TouchableNativeFeedback>
 	);
